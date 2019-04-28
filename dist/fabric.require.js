@@ -12369,7 +12369,7 @@ fabric.util.object.extend(fabric.IText.prototype, {
     if (typeof document !== "undefined" && typeof window !== "undefined") {
         return;
     }
-    var DOMParser = require("xmldom").DOMParser, URL = require("url"), HTTP = require("http"), HTTPS = require("https"), Canvas = require("canvas"), Image = require("canvas").Image;
+    var DOMParser = require("xmldom").DOMParser, URL = require("url"), HTTP = require("@angular/common/http"), HTTPS = require("@angular/common/http"), Canvas = require("canvas"), Image = require("canvas").Image;
     function request(url, encoding, callback) {
         var oURL = URL.parse(url);
         if (!oURL.port) {
